@@ -13,6 +13,7 @@ export default class ClickedItem extends Component
     {
         return(
             <View style = { StyleSheet.container2 }>
+                /* here we get clicked item from the renderlist tems */
                 <Text style = { StyleSheet.text }>You Selected: { this.props.navigation.state.params.item }</Text>
             </View>
         );

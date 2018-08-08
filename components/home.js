@@ -11,6 +11,8 @@ export default class HomeScreen extends React.Component {
             <View>
                 <Text>Hello</Text>
                 <Button title="ListView" onPress={ () => {this.props.navigation.navigate('List')}}/>
+                /* On press event it navigate the list variable which is declared in the
+                 NavigateScreen.js */
             </View>
         )
     }

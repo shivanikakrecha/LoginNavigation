@@ -11,6 +11,6 @@ export default NavigateScreens = createStackNavigator(
     {
         First: { screen: LoginScreen },//for main screen we have used first. Here its only type of variable.
         Second: { screen: HomeScreen },//second screen reference
-        // List : {screen: ListviewScreen}
+        List : {screen: ListviewScreen} //using for navigate internal navigation for listview component.
     });
 

@@ -8,6 +8,9 @@ import ClickedItem from "./clickeditem";
 
 var ListviewScreen;
 export default ListviewScreen = createBottomTabNavigator({
+
+    /*here navigation is for listview component when we click on list option we
+     */
         List: { screen: RenderList,
             navigationOptions: () => ({
                 tabBarLabel: 'Browse',

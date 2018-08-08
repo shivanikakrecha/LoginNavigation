@@ -4,6 +4,7 @@ import StyleSheet from "../css/innercss"
 
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+//create datasource for changedrow.
 
 export default class RenderList extends Component
 {

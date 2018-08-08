@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/MaterialIcons'; //install package
 import { View, Button } from 'react-native';
-import { TextField } from 'react-native-material-textfield';
+import { TextField } from 'react-native-material-textfield'; //install package
 import StyleSheet from "../static/css/common";
 
 
@@ -23,6 +23,8 @@ export default class LoginScreen extends React.Component {
     }
 
     changePwdType = () => {
+        /*for icon eye in the password field when we click on this its toggle value of password
+        property with the hide and show. */
         let newState;
         if (this.state.password) {
             newState = {
@@ -42,14 +44,16 @@ export default class LoginScreen extends React.Component {
     };
 
     validateEmptyFiled = () => {
+        //check field is empty or not.
         const { name } = this.state;
         const { password } = this.state;
 
-        if ( name == '' || password == ''){
+        if ( name === '' || password === ''){
             alert("fill field")
         }
 
         else {
+            //it can navigate with second screen on click login button event.
             this.props.navigation.navigate('Second');
         }
 
@@ -70,7 +74,7 @@ export default class LoginScreen extends React.Component {
                                onChangeText={password => this.setState({password})}
                                // secureTextEntry={this.state.password} // this will be set value of password which we initialized into state.
                     />
-
+                    /* It shows the EYE icon with the password field. */
                     <Icon style={StyleSheet.icon}
                           name={this.state.icEye}
                           size={this.props.iconSize}
